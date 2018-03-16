@@ -181,7 +181,11 @@ $router->addRoute(array(
 ));
 
 
-
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client$',
+    'GET'   => array('ClientController', 'index') 
+));
 
 // Authentification des clients
 $router->addRoute(array(

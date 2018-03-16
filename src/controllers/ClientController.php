@@ -4,28 +4,28 @@ class ClientController extends BaseController {
 
   public function index($req, $res){
     //Test si l'utilisateur est logged
-    $this->isLogged(array("redirect" => "/client/login"));
+    $this->isLoggedClient(array("redirect" => "/client/login"));
 
     // Load user
-    $user = new User();
-    $rows = $user->find();
-    $res->html("client/index.php", array("users" => $rows));
+    $client = new Client();
+    $row = $client->findOne($_SESSION["Authentifié_id"]);
+    $res->html("client/index.php", array("client" => $row));
   }
 
   public function login($req, $res){
     // Page d'authentification
-    $admin = new User();
-    $res->html("admin/login.php", array());
+    $client = new Client();
+    $res->html("client/login.php", array());
   }
 
   public function loginPost($req, $res){
     // Récuperation des données à travers de Modèle
-    $admin = new User();
+    $client = new Client();
 
     $email = $_POST["email"];
     $password = md5($_POST["password"]);
 
-    $rows = $admin->isUser($email, $password);
+    $rows = $client->isClient($email, $password);
 
 
     // Test si l'adresse et le mot de passe envoyer dans la variable $_POST conrespondent
@@ -34,6 +34,7 @@ class ClientController extends BaseController {
 
       // Test Ok, mise à jour de la session afin de se souvenir que cette personne est bien authentifier à travers la session
       $_SESSION["Authentifié_client"] = true;
+      $_SESSION["Authentifié_id"] = $rows["id"];
       // Redirection de l'utlisateur vers l'espace membres
       header('Location: /client');
     } else {
