@@ -48,4 +48,19 @@ class ClientController extends BaseController {
     header('Location: /');
   }
 
+  public function inscription($req, $res) {
+    $livraison = new Livraison();
+    $livraison->insert(array(
+        'fullName' => $_POST['fullName'],
+        'street' => $_POST['street'],
+        'streetBonus' => $_POST['streetBonus'],
+        'city' => $_POST['city'],
+        'region' => $_POST['region'],
+        'zipCode' => $_POST['zipCode'],
+        'phoneNumber' => $_POST['phoneNumber']
+    ));
+
+    $res->html("client/adresse_ok.php", array());
+}
+
 }

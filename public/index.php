@@ -189,6 +189,17 @@ $router->addRoute(array(
 
 // Authentification des clients
 $router->addRoute(array(
+    'route' => '^/client$',
+    'POST'   => array('ClientController', 'inscription') 
+));
+
+$router->addRoute(array(
+    'route' => '^/client_livraison$',
+    'POST'   => array('ClientController', 'inscription') 
+));
+
+// Authentification des clients
+$router->addRoute(array(
     'route' => '^/client/login$',
     'GET'   => array('ClientController', 'login') 
 ));

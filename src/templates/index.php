@@ -4,6 +4,7 @@
   <h4>Deliveroo</h4>
   <hr>
   <a href="/client/login">Se connecter</a>
+  <a href="">creer un compte</a>
   <div class="container">
     <div class="row">
       <?php foreach($data["plats"] as $key => $value) { ?>
