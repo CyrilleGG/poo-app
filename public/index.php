@@ -180,6 +180,13 @@ $router->addRoute(array(
     'POST'   => array('NewsletterController', 'inscrit')
 ));
 
+
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client$',
+    'GET'   => array('ClientController', 'index') 
+));
+
 // Authentification des clients
 $router->addRoute(array(
     'route' => '^/client/login$',
