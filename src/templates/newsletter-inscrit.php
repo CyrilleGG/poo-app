@@ -1,7 +1,7 @@
 <?php include "common/header.php" ?>
 
 <div id="transactions">
-  <h4>Deliveroo - Newsletter</h4>
+  <h4>Velideli - Newsletter</h4>
   <hr>
 <div class="container">
 	<div class="row">
