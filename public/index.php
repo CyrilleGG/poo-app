@@ -231,8 +231,13 @@ $router->addRoute(array(
     'route' => '^/client$',
     'POST'   => array('ClientController', 'adresse') 
 ));
+// $router->addRoute(array(
+//     'route' => '^/client_livraison$',
+//     'POST'   => array('ClientController', 'adresse') 
+// ));
+
 $router->addRoute(array(
-    'route' => '^/client_livraison$',
+    'route' => '^/client/livraison$',
     'POST'   => array('ClientController', 'adresse') 
 ));
 

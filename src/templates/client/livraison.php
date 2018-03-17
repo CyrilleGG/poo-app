@@ -1,4 +1,4 @@
-<?php include "common/header.php" ?>
+<?php include "header.php" ?>
 
 <div id="transactions">
   <h4>Veli Deli - Livraison</h4>
@@ -40,4 +40,4 @@
 	</div>
 </div>
 </div>
-<?php include "common/footer.php" ?>
+<?php include "footer.php" ?>
