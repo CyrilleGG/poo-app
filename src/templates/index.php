@@ -1,7 +1,7 @@
 <?php include "common/header.php" ?>
 
 <div id="transactions">
-  <h1>Bienvenue sur Deliveroo</h1>
+  <h1>Bienvenue sur Velideli</h1>
   <hr>
   <div class="container-fluid">
     <div class="row">
