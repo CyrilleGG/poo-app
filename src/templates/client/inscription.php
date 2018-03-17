@@ -10,6 +10,9 @@
         <form role="form" method="post">
             <fieldset>
                 <div class="form-group">
+                    <input class="form-control" placeholder="Votre nom" name="nom" type="nom" value="">
+                </div>
+                <div class="form-group">
                     <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
                 </div>
                 <div class="form-group">
