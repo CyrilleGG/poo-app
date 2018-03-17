@@ -13,7 +13,7 @@ class AdminUserController extends BaseController {
   public function index($req, $res){
     //Test si l'utilisateur est logged
     $this->isLogged(array("redirect" => "/admin/login"));
-    $user = new User();
+    $user = new Client();
     $rows = $user->find();
     $res->html("admin/users.php", array("users" => $rows));
   }
@@ -21,11 +21,11 @@ class AdminUserController extends BaseController {
   public function add($req, $res){
     //Test si l'utilisateur est logged
     $this->isLogged(array("redirect" => "/admin/login"));
-    $user = new User();
+    $user = new Client();
 
     if($_SERVER['REQUEST_METHOD'] == "POST") {
-        $result = $user->insert($this->getData());
-        $this->redirect("/admin");
+        $result = $user->insert($this->index());
+        $this->redirect("/client");
     } else {
         $res->html("admin/user.php", array());
     }
@@ -33,7 +33,7 @@ class AdminUserController extends BaseController {
 
   public function update($req, $res){
     $this->isLogged(array("redirect" => "/admin/login"));
-    $user = new User();
+    $user = new Client();
 
     if($_SERVER['REQUEST_METHOD'] == "POST") {
         $result = $user->update($_GET["id"], $this->getData());
@@ -46,7 +46,7 @@ class AdminUserController extends BaseController {
 
   public function delete($req, $res){
     $this->isLogged(array("redirect" => "/admin/login"));
-    $user = new User();
+    $user = new Client();
     $user->delete($_GET["id"]);
     $this->redirect("/admin");
   }

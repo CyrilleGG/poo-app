@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Deliveroo</title>
+  <title>Veli Deli</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- Optional theme -->
@@ -58,14 +58,14 @@
 <header>
 	<div class="container-fluid fixed-top">
 		<div class="row">
-      <nav class="col navbar navbar-expand-md navbar-dark bg-info">
-        <a class="navbar-brand" href="#">Deliveroo</a>
+      <nav class="col navbar navbar-expand-md navbar-dark bg-success">
+        <a class="navbar-brand" href="../index.php">Velideli</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="form-inline ml-auto">
-            <a href="#" class="btn btn-outline-light mr-3">Se connecter</a><a href="#" class="btn btn-light">S'inscrire</a>
+            <a href="/client/login" class="btn btn-outline-light mr-3">Se connecter</a><a href="/client/inscription" class="btn btn-light">S'inscrire</a>
           </div>
         </div>
       </nav>
