@@ -24,8 +24,8 @@ class AdminUserController extends BaseController {
     $user = new User();
 
     if($_SERVER['REQUEST_METHOD'] == "POST") {
-        $result = $user->insert($this->getData());
-        $this->redirect("/admin");
+        $result = $user->insert($this->index());
+        $this->redirect("/client");
     } else {
         $res->html("admin/user.php", array());
     }
