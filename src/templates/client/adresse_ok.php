@@ -8,10 +8,17 @@
       <p>Choisissez maintenant votre plat</p>
     </div>
   
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <?php foreach($data["plats"] as $key => $value) { ?>
-        <div class="col-md-12"><a href="/plat?id=<?php echo $value["id"] ?>"><?php echo $value["nom"] ?></a></div>
+        <div class="col-3 mx-auto">
+          <div class="row" style="display: inline-block; overflow: hidden">
+            <div class="col-12" style="display: inline-block; overflow: hidden; max-height: 195px">
+              <img class="col-12" src="<?php echo $value["image"] ?>" alt="Un <?php echo $value["nom"] ?>">
+            </div>
+            <a href="/plat?id=<?php echo $value["id"] ?>"><h5 class="col-12 mt-4 text-center"><?php echo $value["nom"] ?> ?</h5></a>
+          </div>
+        </div>
         <?php } ?>
       </div>
           
@@ -22,3 +29,7 @@
 </div>
 
 <?php include "footer.php" ?>
+
+
+
+<!-- <a href="/plat?id=<?php echo $value["id"] ?>"><?php echo $value["nom"] ?></a> -->
