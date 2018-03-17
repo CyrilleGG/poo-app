@@ -13,7 +13,7 @@
                 
                 <form method="post" action="newsletter-inscrit">
                     <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
-                        <input type="email" id="" name="email" placeholder="your@email.com">
+                        <input type="email" id="email" name="email" placeholder="your@email.com">
                     </div>
                     <br />
                     <input type="submit" value="S'inscrire" class="btn btn-large" />
