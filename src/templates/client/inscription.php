@@ -16,7 +16,7 @@
                     <input class="form-control" placeholder="Mot de passe" name="password" type="password" value="">
                 </div>
                 <!-- Change this to a button or input when using this as a form -->
-                <button type="submit" class="btn btn-sm btn-success">S'inscrire'</button>
+                <button type="submit" class="btn btn-sm btn-success">S'inscrire</button>
             </fieldset>
         </form>
     </div>
