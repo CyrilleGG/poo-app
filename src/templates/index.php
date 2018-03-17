@@ -12,7 +12,7 @@
           <div class="col-12" style="display: inline-block; overflow: hidden; max-height: 195px">
             <img class="col-12" src="<?php echo $value["image"] ?>" alt="Un <?php echo $value["nom"] ?>">
           </div>
-          <h5 class="col-12 mt-4 text-center">Un <?php echo $value["nom"] ?> ?</h5>
+          <h5 class="col-12 mt-4 text-center"> <?php echo $value["nom"] ?> ?</h5>
         </div>
       </div>
       <?php } ?>

@@ -36,7 +36,7 @@ class ClientController extends BaseController {
       $_SESSION["Authentifié_client"] = true;
       $_SESSION["Authentifié_id"] = $rows["id"];
       // Redirection de l'utlisateur vers l'espace membres
-      header('Location: /client');
+      header('Location: /client/livraison');
     } else {
       // si les données ne conrespondent pas, nous renvoyions la page de login à travers la vue
       $res->html("client/login.php", array());
@@ -69,17 +69,9 @@ class ClientController extends BaseController {
     $livraison = new Livraison();
     $livraison->insert(array(
         'fullName' => $_POST['fullName'],
-        'street' => $_POST['street'],
-        'streetBonus' => $_POST['streetBonus'],
-        'city' => $_POST['city'],
-        'region' => $_POST['region'],
-        'zipCode' => $_POST['zipCode'],
-        'phoneNumber' => $_POST['phoneNumber']
     ));
 
     $res->html("client/adresse_ok.php", array());
 }
-
-
 
 }

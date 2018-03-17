@@ -59,7 +59,7 @@
 	<div class="container-fluid fixed-top">
 		<div class="row">
       <nav class="col navbar navbar-expand-md navbar-dark bg-success">
-        <a class="navbar-brand" href="../index.php">Velideli</a>
+        <a class="navbar-brand" href="/">Velideli</a>
       </nav>
 		</div>
 	</div>

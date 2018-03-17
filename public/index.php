@@ -231,15 +231,7 @@ $router->addRoute(array(
     'route' => '^/client$',
     'POST'   => array('ClientController', 'adresse') 
 ));
-// $router->addRoute(array(
-//     'route' => '^/client_livraison$',
-//     'POST'   => array('ClientController', 'adresse') 
-// ));
 
-$router->addRoute(array(
-    'route' => '^/client/livraison$',
-    'POST'   => array('ClientController', 'adresse') 
-));
 
 // ======================= AUTHENTIFICATION DES CLIENTS =====================
 $router->addRoute(array(
@@ -253,6 +245,18 @@ $router->addRoute(array(
 $router->addRoute(array(
     'route' => '^/client/logout$',
     'GET'   => array('ClientController', 'logout')
+));
+// =======================================================
+
+// ======================= CHOIX DE L'ADRESSE  =====================
+$router->addRoute(array(
+    'route' => '^/client/livraison$',
+    'GET'   => array('ClientController', 'index') 
+));
+
+$router->addRoute(array(
+    'route' => '^/client/livraison$',
+    'POST'   => array('ClientController', 'adresse') 
 ));
 // =======================================================
 

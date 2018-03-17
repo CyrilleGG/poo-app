@@ -2,6 +2,8 @@
 
 <div id="transactions">
   <h4>Veli Deli - Livraison</h4>
+  <h3>Vous voilà identifié - bonjour <?php echo $data["client"] ["nom"]?> </h3>
+  <h4>Entrez votre adresse pour être livré</h4>
   <hr>
 <div class="container">
 	<div class="row">
