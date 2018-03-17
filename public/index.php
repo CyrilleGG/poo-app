@@ -75,11 +75,6 @@ $router->addRoute(array(
     'route' => '^/checkout',
     'ALL'   => array('PlatController', 'checkout') // Classe IndexController, Méthode index
 ));
-
-$router->addRoute(array(
-    'route' => '^/payment',
-    'ALL'   => array('PlatController', 'payment') // Classe IndexController, Méthode index
-));
 // =======================================================
 
 // ================ INSCRIPTION NEWSLETTER ==================

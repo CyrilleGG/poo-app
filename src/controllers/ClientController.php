@@ -76,7 +76,9 @@ class ClientController extends BaseController {
         'phoneNumber' => $_POST['phoneNumber']
     ));
 
-    $res->html("client/adresse_ok.php", array());
+    $plats = new Plat();
+    $rows = $plats->find();
+    $res->html("client/adresse_ok.php", array('plats' => $rows));
 }
 
 
