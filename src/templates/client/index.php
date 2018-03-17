@@ -7,13 +7,6 @@
   <div class="row">
     <div class="span5">
       <table class="table table-striped table-condensed">
-        <thead>
-          <tr>
-            <th>Nom</th>
-            <th>Email</th>
-            <th>Opérations</th>
-          </tr>
-        </thead>
         <tbody>
           <p>Hello World</p>
           <?php echo $data["client"] ["nom"]?>

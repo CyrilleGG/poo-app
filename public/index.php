@@ -46,15 +46,15 @@ $router->addRoute(array(
     'ALL'   => array('AdminUserController', 'update') // Classe IndexController, Méthode index
 ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'GET'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'GET'   => array('LivraisonController', 'livrer')
+// ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'POST'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'POST'   => array('LivraisonController', 'livrer')
+// ));
 
 $router->addRoute(array(
     'route' => '^/paiement$',
