@@ -80,4 +80,6 @@ class ClientController extends BaseController {
     $res->html("client/adresse_ok.php", array());
 }
 
+
+
 }

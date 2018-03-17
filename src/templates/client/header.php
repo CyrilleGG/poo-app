@@ -2,72 +2,65 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-  <title>Deliveroo - Admin</title>
-
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/litera/bootstrap.css" crossorigin="anonymous">
-
-
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+  <title>Deliveroo</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Optional theme -->
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
-
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   <style>
     body {
       font-family: "Open Sans";
       position: absolute;
+      margin-top: 80px;
       width: 100%;
       height: 100%;
       color: #151515;
       padding: 15px;
     }
 
-    .content {
-      margin-top: 90px;
+    #header {
+      font-weight: 400;
+    }
+
+    .container {
+      width: 1000px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .img-mov {
+      height: 300px;
+    }
+
+    .movies {
+      text-align: center;
+    }
+
+    .line2 {
+      font-size: 12px;
+      color: #aaa;
+      margin-bottom: 20px;
     }
 
     a {
       text-decoration: none!important;
     }
 
-    * {
-      outline: none!important;
-    }
-
-    form {
-      margin-bottom:100px
-    }
   </style>
+</head>
 <body>
-<div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <nav style="width: 100%;" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Back office Client</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="/admin/users">Utilisateurs</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/plats">Plats</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/commandes">Commandes</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/newsletters">Newsletters</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/livraisons">Adresses de livraison</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/paiements">Paiements</a></li>
-              <li class="nav-item"><a class="nav-link" href="/admin/logout" target="_blank">Déconnexion</a></li>
-            </ul>
-          </div>
-        </nav>
-
-        </div>
-      </div>
-    </div>
+<header>
+	<div class="container-fluid fixed-top">
+		<div class="row">
+      <nav class="col navbar navbar-expand-md navbar-dark bg-success">
+        <a class="navbar-brand" href="../index.php">Velideli</a>
+      </nav>
+		</div>
+	</div>
+</header>

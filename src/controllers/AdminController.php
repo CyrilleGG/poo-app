@@ -7,7 +7,7 @@ class AdminController extends BaseController {
     $this->isLogged(array("redirect" => "/admin/login"));
 
     // Load user
-    $user = new User();
+    $user = new Client();
     $rows = $user->find();
     $res->html("admin/index.php", array("users" => $rows));
   }
