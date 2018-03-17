@@ -13,6 +13,13 @@ class BaseController {
       $this->redirect($array["redirect"]);
   }
 
+  public function isLoggedClient($array){
+    if(isset($_SESSION["Authentifié_client"]) && $_SESSION["Authentifié_client"] == true) {
+      return true;
+    }
+    $this->redirect($array["redirect"]);
+}
+
   public function redirect($path) {
     header('Location: '. $path);
     exit;

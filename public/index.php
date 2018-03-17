@@ -46,15 +46,15 @@ $router->addRoute(array(
     'ALL'   => array('AdminUserController', 'update') // Classe IndexController, Méthode index
 ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'GET'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'GET'   => array('LivraisonController', 'livrer')
+// ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'POST'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'POST'   => array('LivraisonController', 'livrer')
+// ));
 
 $router->addRoute(array(
     'route' => '^/paiement$',
@@ -179,5 +179,42 @@ $router->addRoute(array(
     'route' => '^/newsletter-inscrit$',
     'POST'   => array('NewsletterController', 'inscrit')
 ));
+
+
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client$',
+    'GET'   => array('ClientController', 'index') 
+));
+
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client$',
+    'POST'   => array('ClientController', 'inscription') 
+));
+
+$router->addRoute(array(
+    'route' => '^/client_livraison$',
+    'POST'   => array('ClientController', 'inscription') 
+));
+
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client/login$',
+    'GET'   => array('ClientController', 'login') 
+));
+
+// Authentification des clients - envoie des données en POST
+$router->addRoute(array(
+    'route'  => '^/client/login$',
+    'POST'   => array('ClientController', 'loginPost') 
+));
+
+// Déconnexion de l'espace clients
+$router->addRoute(array(
+    'route' => '^/client/logout$',
+    'GET'   => array('ClientController', 'logout')
+));
+
 
 $router->run();
