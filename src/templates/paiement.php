@@ -2,6 +2,8 @@
 
 <div id="transactions">
   <h4>Deliveroo - Paiement</h4>
+  <h5>Votre panier est de : *prix du plat*</h5>
+  <p>rentez vos informations de Paiement</p>
   <hr>
   <div class="container">
     <div class="row">

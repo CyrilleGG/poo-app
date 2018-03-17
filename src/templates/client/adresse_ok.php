@@ -7,7 +7,7 @@
 	<div class="row">
     Votre adresse a été prise en compte !
 	</div>
-  <p>images ici bordel</p>
+  <p>Choisissez votre plat</p>
   <div class="container">
     <div class="row">
       <?php foreach($data["plats"] as $key => $value) { ?>

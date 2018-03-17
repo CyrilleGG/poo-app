@@ -2,14 +2,14 @@
 
 
 <div class="container content">
-  <h3>Utilisateurs <a class="btn btn-default" href="/admin/users/add">Ajouter un user</a></h3>
+  <h3>Vous voilà identifié - bonjour <?php echo $data["client"] ["nom"]?> </h3>
+  <h4>Entrez votre adresse pour être livré</h4>
   <hr>
   <div class="row">
     <div class="span5">
       <table class="table table-striped table-condensed">
         <tbody>
-          <p>Hello World</p>
-          <?php echo $data["client"] ["nom"]?>
+         
         </tbody>
       </table>
     </div>

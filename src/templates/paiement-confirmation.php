@@ -8,5 +8,6 @@
        Merci
     </div>
   </div>
+  <p>formulaire newsletter</p>
 </div>
 <?php include "common/footer.php" ?>
