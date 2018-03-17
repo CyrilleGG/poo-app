@@ -58,8 +58,8 @@
 <header>
 	<div class="container-fluid fixed-top">
 		<div class="row">
-      <nav class="col navbar navbar-expand-md navbar-dark bg-info">
-        <a class="navbar-brand" href="#">Deliveroo</a>
+      <nav class="col navbar navbar-expand-md navbar-dark bg-success">
+        <a class="navbar-brand" href="#">Velideli</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
