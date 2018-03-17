@@ -65,7 +65,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="form-inline ml-auto">
-            <a href="#" class="btn btn-outline-light mr-3">Se connecter</a><a href="#" class="btn btn-light">S'inscrire</a>
+            <a href="/client/login" class="btn btn-outline-light mr-3">Se connecter</a><a href="/client/inscription" class="btn btn-light">S'inscrire</a>
           </div>
         </div>
       </nav>

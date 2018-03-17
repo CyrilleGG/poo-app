@@ -48,7 +48,24 @@ class ClientController extends BaseController {
     header('Location: /');
   }
 
-  public function inscription($req, $res) {
+  public function add($req, $res){
+    $res->html("client/inscription.php", array());
+  }
+
+  public function addPost($req, $res){
+    //Test si l'utilisateur est logged
+    $client = new Client();
+    $client->insert(array(
+        'email' => $_POST['email'],
+        'password' => md5($_POST['password'])
+    ));
+
+    return $this->loginPost($req, $res);
+
+    // $res->html("client/index.php", array());
+  }
+
+  public function adresse($req, $res) {
     $livraison = new Livraison();
     $livraison->insert(array(
         'fullName' => $_POST['fullName'],
