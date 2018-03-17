@@ -8,8 +8,8 @@
 class IndexController {
   public function index($req, $res){
     // Modèle Film
-    $user = new Plat();
-    $rows = $user->find();
+    $plats = new Plat();
+    $rows = $plats->find();
     $res->html("index.php", array('plats' => $rows));
   }
 }
