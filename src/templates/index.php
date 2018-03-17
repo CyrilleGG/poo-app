@@ -2,27 +2,22 @@
 
 <div id="transactions">
   <h1>Bienvenue sur Velideli</h1>
-  <hr>
+  <hr style="margin-bottom: 100px">
   <div class="container-fluid">
     <div class="row">
+
+      <?php foreach($data["plats"] as $key => $value) { ?>
       <div class="col-3 mx-auto">
-        <div class="row">
-          <img src="./images/joseph-gonzalez-99034-unsplash.jpg" alt="Un croque-madame" class="col-12">
-          <h5 class="col-12 text-center">Un croque-madame ?</h5>
+        <div class="row" style="display: inline-block; overflow: hidden">
+          <div class="col-12" style="display: inline-block; overflow: hidden; max-height: 195px">
+            <img class="col-12" src="<?php echo $value["image"] ?>" alt="Un <?php echo $value["nom"] ?>">
+          </div>
+          <h5 class="col-12 mt-4 text-center">Un <?php echo $value["nom"] ?> ?</h5>
         </div>
       </div>
-      <div class="col-3 mx-auto">
-        <div class="row">
-          <img src="./images/thomas-tucker-391058-unsplash.jpg" alt="Une pizza" class="col-12">
-          <h5 class="col-12 text-center">Une pizza ?</h5>
-        </div>
-      </div>
-      <div class="col-3 mx-auto">
-        <div class="row">
-          <img src="./images/eaters-collective-132773-unsplash.jpg" alt="Un plat de pâtes" class="col-12">
-          <h5 class="col-12 text-center">Un plat de pâtes ?</h5>
-        </div>
-      </div>
+      <?php } ?>
+
+
     </div>
   </div>
 </div>
