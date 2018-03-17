@@ -46,15 +46,15 @@ $router->addRoute(array(
     'ALL'   => array('AdminUserController', 'update') // Classe IndexController, Méthode index
 ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'GET'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'GET'   => array('LivraisonController', 'livrer')
+// ));
 
-$router->addRoute(array(
-    'route' => '^/livraison$',
-    'POST'   => array('LivraisonController', 'livrer')
-));
+// $router->addRoute(array(
+//     'route' => '^/livraison$',
+//     'POST'   => array('LivraisonController', 'livrer')
+// ));
 
 $router->addRoute(array(
     'route' => '^/paiement$',
@@ -185,6 +185,17 @@ $router->addRoute(array(
 $router->addRoute(array(
     'route' => '^/client$',
     'GET'   => array('ClientController', 'index') 
+));
+
+// Authentification des clients
+$router->addRoute(array(
+    'route' => '^/client$',
+    'POST'   => array('ClientController', 'inscription') 
+));
+
+$router->addRoute(array(
+    'route' => '^/client_livraison$',
+    'POST'   => array('ClientController', 'inscription') 
 ));
 
 // Authentification des clients
